@@ -1,3 +1,4 @@
-Nome,Categoria etária,Etapas participadas,Formatos de prova realizados,Skills Badge (Sim/Em desenvolvimento),Nível atual (Explorer / Builder / Developer)
-Nicolly Sophia,Sub16,2,"Rollerskii, corrida, ski cross",Conquistado,Explorer
-Guilherme Oliveira,Sub16,1,"rollerskii, corrida",Em desenvolvimento,Builder
+Nome,Categoria etária,Etapas participadas,Rollerski,Corrida,Ski Cross,Skills Badge (Sim/Em desenvolvimento),Nível atual (Explorer / Builder / Developer)
+Nicolly Sophia,Sub16,2,1,1,1,Conquistado,Exploração
+Guilherme Oliveira,Sub16,1,1,1,0,Em desenvolvimento,Desenvolvimento
+Julia Valentina,Sub14,4,0,0,0,Conquistado,Progressão

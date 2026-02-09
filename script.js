@@ -26,23 +26,21 @@ fetch('atletas.csv')
           ${createTrack('Participação', participacao, 4)}
           ${createTrack('Desenvolvimento Técnico', tecnica, 3)}
           ${createTrack('Experiência Competitiva', competicao, 3)}
-          ${createTrack('Multimodalidade', multimodal, 2)}
+          ${createMultimodal(rollerski, corrida, skicross)}
         </section>
       `;
     });
   });
 
-function createTrack(title, doneSteps, totalSteps) {
-  let stepsHTML = '';
-
-  for (let i = 1; i <= totalSteps; i++) {
-    stepsHTML += `<div class="step ${i <= doneSteps ? 'done' : ''}"></div>`;
-  }
-
+function createMultimodal(rollerski, corrida, skicross) {
   return `
     <div class="track">
-      <div class="track-title">${title}</div>
-      <div class="steps">${stepsHTML}</div>
+      <div class="track-title">Multimodalidade</div>
+      <div class="modalidades">
+        ${rollerski == 1 ? '<span class="tag">Rollerski</span>' : ''}
+        ${corrida == 1 ? '<span class="tag">Corrida</span>' : ''}
+        ${skicross == 1 ? '<span class="tag">Ski Cross</span>' : ''}
+      </div>
     </div>
   `;
 }

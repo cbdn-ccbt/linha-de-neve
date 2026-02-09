@@ -1,98 +1,26 @@
-* {
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Linha de Neve | CBDN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-  margin: 0;
-  background: #F4F7FA;
-  color: #0B2A4A;
-}
+<body>
 
-/* HEADER */
-header {
-  background: #0B2A4A;
-  color: white;
-  padding: 24px;
-  text-align: center;
-}
+<header>
+  <h1>Linha de Neve</h1>
+  <p>Ranking Formativo do Rollerski Brasileiro</p>
+</header>
 
-header p {
-  margin-top: 6px;
-  font-size: 14px;
-  opacity: 0.85;
-}
+<main id="athletes-container">
+  <!-- Atletas gerados via JavaScript -->
+</main>
 
-/* ATLETA */
-.athlete {
-  background: white;
-  margin: 24px auto;
-  padding: 24px;
-  max-width: 900px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
+<footer>
+  <p>CBDN • Confederação Brasileira de Desportos na Neve</p>
+</footer>
 
-.athlete h2 {
-  margin-bottom: 4px;
-}
-
-.category {
-  font-size: 13px;
-  opacity: 0.7;
-}
-
-/* TRILHAS */
-.track {
-  margin-top: 20px;
-}
-
-.track-title {
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.steps {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 8px;
-}
-
-.step {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: #D0D6DC;
-  position: relative;
-}
-
-.step.done {
-  background: #1E6FB9;
-}
-
-.step::after {
-  content: '';
-  position: absolute;
-  right: -12px;
-  top: 8px;
-  width: 12px;
-  height: 2px;
-  background: #D0D6DC;
-}
-
-.step.done::after {
-  background: #1E6FB9;
-}
-
-.step:last-child::after {
-  display: none;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  font-size: 12px;
-  padding: 20px;
-  color: #666;
-}
+<script src="script.js"></script>
+</body>
+</html>
